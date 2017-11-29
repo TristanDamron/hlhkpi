@@ -1,3 +1,119 @@
-h1 {
-    color: blue;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: #6a717f;
+    width: 100%;
+    height: 80px;
+    top: auto;
+    box-shadow: 0px 4px 10px #2d2d2d;
+    color: ghostwhite;
+}
+
+a {
+    color: #ff7676;
+}
+
+footer {
+    background-color: #353940;
+    width: 100%;
+    height: 100px;
+    margin-top: 35px;
+    bottom: auto;
+    box-shadow: 0px -4px 20px #2d2d2d;
+    color: ghostwhite;
+    position: absolute;
+}
+
+.header-name {
+    font-size: 1.5em;
+    padding: 25px;
+}
+
+.signin-button {
+    background-color: #bfcce5;
+    color: ghostwhite;
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+    width: 100px;
+    display: inline-block;
+    float: right; 
+}
+
+.tab-panel {
+    background-color: #6d6d6d;
+    width: 100%;
+    height: 40px;
+    top: auto;
+    color: ghostwhite;
+    z-index: -1;
+    position: absolute;
+}
+
+.tabs {
+    z-index: 1;
+    padding-top: 10px;
+}
+
+.tab {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.tools {
+    float: right;
+    margin-right: 30px;
+    padding-right: 50px;
+}
+
+.watch-tooltip {
+    display: none;
+}
+
+.report-tooltip {
+    display: none;
+}
+
+.box {
+    width: 250px;
+    height: 250px;
+    background-color: ghostwhite;
+    margin-top: 50px;
+    margin-left: 20px;
+    border-radius: 3px;
+    border-bottom-style: solid;
+    border-color: lightgrey;
+    border-width: thin;
+    display: inline-block;
+    z-index: -1;
+}
+
+#watch:hover + .watch-tooltip {
+    margin-top: 10px;
+    color: darkslategrey;
+    background-color: ghostwhite;
+    box-shadow: 0px 2px 5px #2d2d2d;
+    border-radius: 3px;
+    padding: 10px;
+    z-index: 1;
+    position: absolute;
+    display: block;
+    font-size: 0.5em;
+}
+
+#report:hover + .report-tooltip {
+    margin-top: 10px;
+    color: darkslategrey;
+    background-color: ghostwhite;
+    box-shadow: 0px 2px 5px #2d2d2d;
+    border-radius: 3px;
+    padding: 10px;
+    z-index: 1;
+    position: absolute;
+    display: block;
+    font-size: 0.5em;
 }

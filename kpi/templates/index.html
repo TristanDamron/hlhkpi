@@ -3,8 +3,43 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="{% static 'css/hlhkpi.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/glyphicons-only-bootstrap/css/bootstrap.min.css' %}">
     </head>
     <body>
-        <h1>Hello world!</h1>
+        <header>
+            <div class="header-name">
+                Healthy Living at Home
+                <!-- if user is signed in, show a different button -->
+                <button class="signin-button">
+                    <img width="15px" src="{% static 'img/google-icon.png' %}" alt="Google"/>
+                    Sign in
+                </button>
+            </div>
+        </header>
+        <div class="tab-panel">
+            <div class="tabs">
+                <!-- For all of the sheets watched, display links to them here. -->
+                <a class="tab" href="#" alt="Link">Profits</a>
+                <a class="tab" href="#" alt="Link">Employee Roster</a>
+                <div class="tools">
+                    <a href="#" id="watch" class="glyphicon glyphicon-eye-open"></a>
+                    <div class="watch-tooltip">Watch a new Sheet</div>
+                    <a href="#" id="report" class="glyphicon glyphicon-cloud-download"></a>
+                    <div class="report-tooltip">Download a report</div>
+                </div>
+            </div>
+        </div>
+        <center>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </center>
+        <footer>
+        </footer>
     </body>
 </html>
